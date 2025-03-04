@@ -20,6 +20,10 @@ import subprocess
 #6 Extract the channel id's
 
 """
+
+version = 1.0
+release_date = "03-04-2025"
+
 BOT_TOKEN = "" #replace this with your actual bot token
 MAIN_CHANNEL_ID = int("") #channel id of the #general channel
 VOID_CHANNEL_ID = int("") #channel id of the #VoidClient channel
