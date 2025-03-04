@@ -10,11 +10,21 @@ import os
 import requests
 import subprocess
 
-BOT_TOKEN = ""
-MAIN_CHANNEL_ID = int("")
-VOID_CHANNEL_ID = int("")
-SHELL_CHANNEL_ID = int("")
-USER_ID = int("")
+"""
+
+#1 Create a discord bot
+#2 Create a new discord server
+#3 Create a new channel *VoidClient*
+#4 Create a new channel *VoidShell*
+#5 Invite your newly created bot to your server
+#6 Extract the channel id's
+
+"""
+BOT_TOKEN = "" #replace this with your actual bot token
+MAIN_CHANNEL_ID = int("") #channel id of the #general channel
+VOID_CHANNEL_ID = int("") #channel id of the #VoidClient channel
+SHELL_CHANNEL_ID = int("") #channel id of the #VoidShell channel
+USER_ID = int("") #replace this with your discord user id
 
 # Enable intents
 intents = discord.Intents.default()
