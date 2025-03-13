@@ -122,7 +122,12 @@ async def screenshot(ctx):
         os.remove("screenshot.png")
     else:
         await ctx.send("Failed to take screenshot.")
-
+@bot.command()
+async def messagebox(ctx, message):
+    """Opensa message bos with your selected text"""
+    command_instance = Command()
+    result = command_instance.messagebox(message)
+    await ctx.send(f"{result}"
 @bot.command()
 async def openurl(ctx, url):
     """Open a URL in the default browser"""
