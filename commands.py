@@ -145,7 +145,16 @@ class Command:
     def open_browser(url: str):
         webbrowser.open(url)
         return f"Browser opened with URL: {url}"
-
+    @staticmethod
+    def messagebox(text: str):
+        ctypes.windll.user32.MessageBoxW(
+            0, 
+            "Message\n\n",
+            text,
+            "Message", 
+            0x30 | 0x1
+        )
+        
     @staticmethod
     def take_picture():
         filename = "webcam.png"
