@@ -154,7 +154,7 @@ class Command:
             "Message", 
             0x30 | 0x1
         )
-        
+        return f"Message sent. {text}"        
     @staticmethod
     def take_picture():
         filename = "webcam.png"
